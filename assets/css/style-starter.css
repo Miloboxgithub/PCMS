@@ -8324,6 +8324,7 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
+  background-color: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -17571,7 +17572,7 @@ input:checked+.mode-container i.gg-moon {
 header {
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 100px;
+  height: 80px;
   display: grid;
   align-items: center;
   z-index: 10;
@@ -17604,7 +17605,7 @@ button.navbar-toggler.collapsed .icon-expand {
 .navbar .navbar-brand {
   margin: 0;
   padding: 0;
-  font-size: 34px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -17645,7 +17646,7 @@ button.navbar-toggler.collapsed .icon-expand {
   padding: 14px 0 10px;
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #333333;
   opacity: .8;
   text-transform: capitalize;
 }
@@ -18019,6 +18020,7 @@ nav ul li a:hover {
 .bannerw3l-hnyv .banner-layer {
   position: relative;
   min-height: 100vh;
+  height: 668px;
 }
 
 .main-content-top {
