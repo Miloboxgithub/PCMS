@@ -812,7 +812,7 @@ pre code {
   position: relative;
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 
 .col {
@@ -17159,8 +17159,8 @@ a.text-dark:focus {
   --bg-grey: #f7f7f7;
   --bg-lightgrey: #f8f9fa;
   --layer: rgb(10 8 0 / 52%);
-  --footer-bg: #001524;
-  --footer-bglight: #011b2d;
+  --footer-bg: #E7ECFA;
+  --footer-bglight: #E7ECFA;
 }
 
 [data-theme="dark"] {
@@ -17321,7 +17321,7 @@ p.white {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1200px;
+    max-width: 1500px;
   }
 }
 
@@ -18026,7 +18026,7 @@ nav ul li a:hover {
 
 .bannerw3l-hnyv .banner-layer {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: 668px;
 }
 
@@ -18286,7 +18286,7 @@ nav ul li a:hover {
 /* //banner */
 /*--/w3l-bottom-grids-6--*/
 .w3l-bottom-grids-6 {
-  background: var(--bg-color);
+  /* background: var(--bg-color); */
 }
 
 .w3l-bottom-grids-6 .grids-feature span {
@@ -18367,7 +18367,7 @@ span.inn-text {
 /*--//cwp23-text-cols--*/
 /*-- stats --*/
 .w3l-stats-main {
-  background: var(--bg-grey);
+  /* background: var(--bg-grey); */
 }
 
 .stats-content-left {
@@ -18375,15 +18375,29 @@ span.inn-text {
   display: grid;
 }
 
-.stats_info p {
-  font-size: 46px;
-  line-height: 56px;
+.stats_info .counter {
+
   font-weight: 600;
-  color: var(--secondary-color);
-  margin-top: 10px;
+  font-family: DINNextLTPro, DINNextLTPro;
+  font-weight: bold;
+  font-size: 46px;
+  color: #FFFFFF;
+  line-height: 56px;
+  text-align: left;
+  font-style: normal;
+  margin-top: 48px;
+  margin-left: 12px;
   margin-bottom: 0;
 }
-
+.ppp{
+margin-top: 10px;
+font-family: AlibabaPuHuiTi_3_55_Regular;
+font-size: 28px;
+color: #666666;
+line-height: 40px;
+text-align: left;
+font-style: normal;
+}
 p.para-stat {
   font-size: 17px;
   line-height: 27px;
@@ -18393,11 +18407,15 @@ p.para-stat {
 }
 
 .stats_info h4 {
-  font-size: 26px;
-  line-height: 36px;
-  color: var(--heading-color);
-  font-weight: 600;
+  margin-top: 25px;
+font-weight: 600;
   opacity: 1;
+font-family: AlibabaPuHuiTi_3_75_SemiBold;
+font-size: 36px;
+color: #333333;
+line-height: 50px;
+text-align: left;
+font-style: normal;
 }
 
 .stats_bottom_grid_left img {
@@ -18408,8 +18426,8 @@ p.para-stat {
   text-align: center;
   border-top: none;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 40px;
+  grid-template-columns: 0.1fr 2fr;
+  grid-gap: 60px;
 }
 @media (max-width:1280px) {
 	.stats_info h4 {
@@ -18429,7 +18447,7 @@ p.para-stat {
 		text-align: center;
 		border-top: none;
 		display: grid;
-		grid-template-columns: 1fr 3fr;
+		grid-template-columns: 0fr 3fr;
 		grid-gap: 10px 30px;
 	}
  
@@ -19622,7 +19640,7 @@ form.subscribe {
   color: #fff;
   width: 40px;
   height: 40px;
-  background: var(--primary-color);
+  background: #B6CBFC;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -19638,12 +19656,13 @@ form.subscribe {
 /* //movetop styling */
 .w3l-footer-22 .sub-one-left h6,
 .w3l-footer-22 .sub-two-right h6 {
-  color: #fff;
-  font-size: 22px;
+  color: #333333;
+  font-size: 20px;
   line-height: 32px;
   text-transform: capitalize;
   margin-bottom: 20px;
   font-weight: 600;
+  margin-right: 20px;
 }
 
 .w3l-footer-22 .sub-two-right ul li {
@@ -19693,7 +19712,7 @@ form.subscribe {
 
 .w3l-footer-22 .columns p,
 .w3l-footer-22 .columns p a {
-  color: #a0a0a0;
+  
 }
 
 .w3l-footer-22 .sub-two-right ul li a {

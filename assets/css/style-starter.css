@@ -808,7 +808,7 @@ pre code {
   position: relative;
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 
 .col {
@@ -18019,7 +18019,7 @@ nav ul li a:hover {
 
 .bannerw3l-hnyv .banner-layer {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: 668px;
 }
 
@@ -18290,7 +18290,7 @@ nav ul li a:hover {
 /* //banner */
 /*--/w3l-bottom-grids-6--*/
 .w3l-bottom-grids-6 {
-  background: var(--bg-color);
+  /* background: var(--bg-color); */
 }
 
 .w3l-bottom-grids-6 .grids-feature span {
@@ -18371,7 +18371,7 @@ span.inn-text {
 /*--//cwp23-text-cols--*/
 /*-- stats --*/
 .w3l-stats-main {
-  background: var(--bg-grey);
+  /* background: var(--bg-grey); */
 }
 
 .stats-content-left {
