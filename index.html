@@ -111,11 +111,11 @@ font-size: 16px !important;
                .x01{
 width: 330px !important;
 height: 116px !important;
-margin-bottom: 20px;
+margin-bottom: 40px;
                }
                .x02{width: 330px !important;
                 height: 116px !important;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
                }
                .x03{width: 330px !important;
                 height: 116px !important;
@@ -159,8 +159,7 @@ color: #666666;
 line-height: 40px;
 letter-spacing: 3px;
 text-align: right;
-font-style: normal;
-text-transform: uppercase;
+
         }
         .ccc{
             margin-top: 30px;
@@ -249,7 +248,7 @@ z-index: 10;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-top: 50px;
+top: 60px;
             font-family: AlibabaPuHuiTi_3_45_Light;
 font-size: 28px;
 color: #333333;
@@ -349,7 +348,12 @@ font-style: normal;
     height: 100%; /* 高度100% */
     background-color: rgba(0, 0, 0, 0.4); /* 背景颜色，带透明度 */
 }
-
+/* 弹窗头部的样式 */
+.modal-header {
+    display: flex; /* 使用flexbox布局 */
+    justify-content: space-between; /* 水平方向上分散对齐 */
+    align-items: center; /* 垂直居中 */
+}
 /* 弹窗内容的样式 */
 .modal-content {
     background-color: #fefefe; /* 背景颜色 */
@@ -374,7 +378,16 @@ font-style: normal;
     text-decoration: none;
     cursor: pointer;
 }
-
+/* 添加的文本样式 */
+.scan-text {
+    position: absolute;
+    top: 20px; /* 与图片间隔 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 16px; /* 字体大小 */
+    color: #6c6c6c; /* 字体颜色 */
+}
 /* 禁止滚动的样式 */
 .no-scroll {
     overflow: hidden; /* 禁止滚动 */
@@ -387,8 +400,12 @@ font-style: normal;
     <!-- 蒙层 -->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            
+                <span class="close">&times;</span>
+                <p class="scan-text">请使用手机扫码访问</p>
+            
             <img src="/assets/images/http43.139.217.147front.png" alt="QR Code">
+            
         </div>
     </div>
     <!--header-->
@@ -464,7 +481,7 @@ font-style: normal;
             </video> -->
             <image class="sss" src="/assets/images/编组 21.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
               <div class="theme">应用中心</div>
-              <text class="bbb">扫描二维码，查看对应功能应用</text>
+              <text class="bbb">支持电脑、Android、iOS多端访问</text>
               <div class="ccc">
                     <div class="imgicon" id="toggleModalBtn1">
                         <img class="" src="/assets/images/xuesheng-5.png" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
@@ -653,8 +670,8 @@ font-style: normal;
         </div>
     </section>
     <div class="zd" style="margin-top: 190px;">
-        <text class="t1">学生选课管理</text>
-        <text class="t2">STUDENT COURSE SELECTION MANAGEMENT</text>
+        <text class="t1">实践课程管理</text>
+        <text class="t2">PRACTICAL CURRICULUM MANAGEMENT</text>
         <div class="colors"></div>
     </div>
     <div class="dian">
@@ -680,15 +697,15 @@ font-style: normal;
         <div class="footer-sub py-5">
             <div class="container py-md-5">
                 <div class="row sub-columns" style="justify-content: center;">
-                    <div class="  ">
-                        <view style="display: flex; margin-bottom: 30px; justify-content: center;">
-                            <h5 style="margin-right: 50px;">关于我们</h5> 
-                            <h5 style="margin-right: 50px;">帮助中心</h5> 
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <view style="display: flex;  justify-content: center;align-items: center;">
+                            <h5 style=" font-size: 25px; font-weight: 600; text-align: center;">专业的实践课程管理平台</h5> 
+                            <!-- <h5 style="margin-right: 50px;">帮助中心</h5> 
                             <h5 style="margin-right: 50px;">意见反馈</h5> 
                             <h5 style="margin-right: 50px;">网站地图</h5> 
-                            <h5>企业服务</h5> 
+                            <h5>企业服务</h5>  -->
                         </view>     
-                        <p style="color: #333333;font-size: 16px; ">简介描述字段信息内容简介信息字段内容简介简介描述字段信息内容简介信息字段内容简介简介描述字段信息内容简介信息字段内容简介简介</p>
+                        <!-- <p style="color: #333333;font-size: 16px; ">简介描述字段信息内容简介信息字段内容简介简介描述字段信息内容简介信息字段内容简介简介描述字段信息内容简介信息字段内容简介简介</p> -->
                     </div>
                 </div>
             </div>
