@@ -102,7 +102,7 @@ font-size: 16px !important;
 
         }
         .dian img{
-                width: 70%;
+                width: 70% !important;
                }
                .hshs{
                 width: 100vw !important;
@@ -578,7 +578,7 @@ font-style: normal;
                     </div>
                 </div>
                 <div class="col-lg-6 stats-content-right mb-lg-0 mb-lg-5 mb-2">
-                    <a href="#service" class="d-block zoom"><img src="assets/images/tutu1.png" alt=""
+                    <a href="#service" class="d-block zoom"><img src="assets/images/tututu1.png" alt=""
                             class="img-fluid" /></a>
                 </div>
             </div>
@@ -593,7 +593,7 @@ font-style: normal;
         <div class="container">
             <div class="row stats-con py-lg-0 py-5">
                 <div class="col-lg-6 stats-content-right mb-lg-0 mb-lg-5 mb-2">
-                    <a href="#service" class="d-block zoom"><img src="assets/images/tutu2.png" alt=""
+                    <a href="#service" class="d-block zoom"><img src="assets/images/tututu2.png" alt=""
                             class="img-fluid" /></a>
                 </div>
                 <div class="col-lg-6 stats-content-left pl-lg-5">
@@ -667,7 +667,7 @@ font-style: normal;
                     </div>
                 </div>
                 <div class="col-lg-6 stats-content-right mb-lg-0 mb-lg-5 mb-2">
-                    <a href="#service" class="d-block zoom"><img src="assets/images/tutu3.png" alt=""
+                    <a href="#service" class="d-block zoom"><img src="assets/images/tututu3.png" alt=""
                             class="img-fluid" /></a>
                 </div>
             </div>
@@ -679,7 +679,7 @@ font-style: normal;
         <div class="colors"></div>
     </div>
     <div class="dian">
-        <image class="" src="/assets/images/tutu4.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        <image class="" src="/assets/images/tututu4.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
           
     </div>
     <div class="hshs" >
@@ -719,8 +719,10 @@ font-style: normal;
         <div class="copyright-footer text-center">
             <div class="container">
                 <div class="columns">
-                    <p>Copyright© 2022 consultdog.com备案号：蜀ICP备 2021025221号-1
+                    <p>© 2025 工程实践管理系统. 保留所有权利。
                     </p>
+                    <a href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备18103309号-3
+                    </a>
                 </div>
             </div>
         </div>
@@ -801,8 +803,11 @@ font-style: normal;
         return "PC浏览器";
     }
 }
-
+function isWeChatBrowser() {
+    return navigator.userAgent.toLowerCase().includes('micromessenger');
+}
 var deviceType = detectDeviceType();
+var isWeChat = isWeChatBrowser();
 console.log("当前设备类型: " + deviceType);
 
         // 获取弹窗元素
@@ -816,7 +821,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // 点击按钮打开弹窗
 btn1.onclick = function() {
-    if(deviceType == "手机浏览器"){
+    if(deviceType == "手机浏览器"|| isWeChat){
         window.location.href = 'http://www.pcmser.cn/front#/';
     }
     else{
@@ -824,7 +829,7 @@ btn1.onclick = function() {
     modal.style.display = "block";}
 }
 btn2.onclick = function() {
-    if(deviceType == "手机浏览器"){
+    if(deviceType == "手机浏览器" || isWeChat){
         window.location.href = 'http://www.pcmser.cn/front#/';
     }
     else{
